@@ -1,162 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#007EA5"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="#007EA5" >
-    
-    <TextView 
+    android:padding="10dp" >
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="5dp"
-        android:layout_span="2" 
-        android:textSize="30dp"
-        android:textStyle="bold"
+        android:text="@string/intro"
         android:textColor="#FFFFFF"
-        android:text="Introduce"/>
-    
-    <TableLayout 
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@drawable/table_border" >
-        
-	    <TableRow >
-	        
-		    <ImageView 
-		        android:id="@+id/image"
-		        android:layout_width="match_parent"
-		    	android:layout_height="match_parent"
-		    	android:layout_margin="1dp"
-		    	android:src="@drawable/profile" />
-		   
-		    <TableLayout >
-		        
-		        <TableRow >
-		            <TextView 
-		        		android:layout_width="wrap_content"
-		        		android:layout_height="match_parent"
-		        		android:background="@drawable/table_border"
-		        		android:gravity="center_horizontal"
-		        		android:padding="3dp"
-		        		android:textSize="17dp"
-		        		android:textStyle="bold"
-        				android:textColor="#FFFFFF"
-		        		android:text="이       름"/>
-		            <TextView 
-		        		android:layout_width="wrap_content"
-		        		android:layout_height="match_parent"
-		        		android:background="@drawable/table_border"
-		        		android:gravity="center_horizontal"
-		        		android:padding="3dp"
-		        		android:textSize="17dp"
-		        		android:textStyle="bold"
-        				android:textColor="#FFFFFF"
-		        		android:layout_weight="5"
-		        		android:text="김 민 형"/>
-		        </TableRow>
-		        
-		        <TableRow >
-		            <TextView 
-		        		android:layout_width="wrap_content"
-		        		android:layout_height="match_parent"
-		        		android:background="@drawable/table_border"
-		        		android:gravity="center_horizontal"
-		        		android:padding="3dp"
-		        		android:textSize="17dp"
-		        		android:textStyle="bold"
-        				android:textColor="#FFFFFF"
-		        		android:text="생년월일"/>
-		            <TextView 
-		        		android:layout_width="wrap_content"
-		        		android:layout_height="match_parent"
-		        		android:background="@drawable/table_border"
-		        		android:gravity="center_horizontal"
-		        		android:padding="3dp"
-		        		android:textSize="17dp"
-		        		android:textStyle="bold"
-        				android:textColor="#FFFFFF"
-		        		android:layout_weight="5"
-		        		android:text="1991 / 09 / 17"/>
-		        </TableRow>
-		        
-		        <TableRow >
-		            <TextView 
-		        		android:layout_width="wrap_content"
-		        		android:layout_height="match_parent"
-		        		android:background="@drawable/table_border"
-		        		android:gravity="center_horizontal"
-		        		android:padding="3dp"
-		        		android:textSize="17dp"
-		        		android:textStyle="bold"
-        				android:textColor="#FFFFFF"
-		        		android:text="학       과"/>
-		            <TextView 
-		        		android:layout_width="wrap_content"
-		        		android:layout_height="match_parent"
-		        		android:background="@drawable/table_border"
-		        		android:gravity="center_horizontal"
-		        		android:padding="3dp"
-		        		android:textSize="17dp"
-		        		android:textStyle="bold"
-        				android:textColor="#FFFFFF"
-		        		android:layout_weight="5"
-		        		android:text="지식정보공학과"/>
-		        </TableRow>
-		        
-		        <TableRow >
-		            <TextView 
-		        		android:layout_width="wrap_content"
-		        		android:layout_height="match_parent"
-		        		android:background="@drawable/table_border"
-		        		android:gravity="center_horizontal"
-		        		android:padding="3dp"
-		        		android:textSize="17dp"
-		        		android:textStyle="bold"
-        				android:textColor="#FFFFFF"
-		        		android:text="학       번"/>
-		            <TextView 
-		        		android:layout_width="wrap_content"
-		        		android:layout_height="match_parent"
-		        		android:background="@drawable/table_border"
-		        		android:gravity="center_horizontal"
-		        		android:padding="3dp"
-		        		android:textSize="17dp"
-		        		android:textStyle="bold"
-        				android:textColor="#FFFFFF"
-		        		android:layout_weight="5"
-		        		android:text="201524697"/>
-		        </TableRow>
-		        
-		        <TableRow >
-		            <TextView 
-		        		android:layout_width="wrap_content"
-		        		android:layout_height="match_parent"
-		        		android:background="@drawable/table_border"
-		        		android:gravity="center_horizontal"
-		        		android:padding="3dp"
-		        		android:textSize="17dp"
-		        		android:textStyle="bold"
-        				android:textColor="#FFFFFF"
-		        		android:text="취       미"/>
-		            <TextView 
-		        		android:layout_width="wrap_content"
-		        		android:layout_height="match_parent"
-		        		android:background="@drawable/table_border"
-		        		android:gravity="center_horizontal"
-		        		android:padding="3dp"
-		        		android:textSize="17dp"
-		        		android:textStyle="bold"
-        				android:textColor="#FFFFFF"
-		        		android:layout_weight="5"
-		        		android:text="축 구"/>
-		        </TableRow>
-		        
-		    </TableLayout>
-		    
-   		</TableRow>
-   		
+        android:background="@drawable/table_border"
+        android:collapseColumns="true" >
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_span="2"
+                android:contentDescription="UserProfileImage"
+                android:src="@drawable/profile" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_border"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="@string/name"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/table_border"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="@string/username"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_border"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="@string/birthday"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/table_border"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="@string/userbirthday"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_border"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="@string/major"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/table_border"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="@string/usermajor"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_border"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="@string/studentno"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/table_border"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="@string/userstudentno"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_border"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="@string/hobby"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/table_border"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="@string/userhobby"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </TableRow>
     </TableLayout>
 
 </LinearLayout>

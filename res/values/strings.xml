@@ -3,5 +3,17 @@
 
     <string name="app_name">IntroDialog</string>
     <string name="button">Click</string>
-
+    
+    <string name="intro">Introduce</string>
+    <string name="name">Name</string>
+    <string name="username">Jaehwan Kim</string>
+    <string name="birthday">Birthday</string>
+    <string name="userbirthday">1989 05 20</string>
+    <string name="major">Major</string>
+    <string name="usermajor">Information Engineering</string>
+    <string name="studentno">Student No.</string>
+    <string name="userstudentno">201524789</string>
+    <string name="hobby">Hobby</string>
+    <string name="userhobby">Swim</string>
+    
 </resources>
