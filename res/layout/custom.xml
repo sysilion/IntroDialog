@@ -2,15 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#007EA5"
-    android:orientation="vertical"
-    android:padding="10dp" >
+    android:background="#80222222"
+    android:orientation="vertical" >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="5dp"
+        android:background="#8033FFFF"
+        android:gravity="center_horizontal"
         android:text="@string/intro"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
@@ -18,18 +18,20 @@
 
     <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/table_border"
-        android:collapseColumns="true" >
+        android:collapseColumns="true"
+        android:layout_margin="10dp" >
 
         <TableRow>
 
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:layout_margin="10dp"
                 android:layout_span="2"
+                android:layout_weight="0"
                 android:contentDescription="UserProfileImage"
                 android:src="@drawable/profile" />
         </TableRow>
@@ -39,9 +41,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/table_border"
                 android:gravity="center_horizontal"
-                android:padding="3dp"
+                android:padding="6dp"
                 android:text="@string/name"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"
@@ -51,9 +52,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
-                android:background="@drawable/table_border"
                 android:gravity="center_horizontal"
-                android:padding="3dp"
+                android:padding="6dp"
                 android:text="@string/username"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"
@@ -65,9 +65,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/table_border"
                 android:gravity="center_horizontal"
-                android:padding="3dp"
+                android:padding="6dp"
                 android:text="@string/birthday"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"
@@ -77,9 +76,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
-                android:background="@drawable/table_border"
                 android:gravity="center_horizontal"
-                android:padding="3dp"
+                android:padding="6dp"
                 android:text="@string/userbirthday"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"
@@ -91,9 +89,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/table_border"
                 android:gravity="center_horizontal"
-                android:padding="3dp"
+                android:padding="6dp"
                 android:text="@string/major"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"
@@ -103,9 +100,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
-                android:background="@drawable/table_border"
                 android:gravity="center_horizontal"
-                android:padding="3dp"
+                android:padding="6dp"
                 android:text="@string/usermajor"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"
@@ -117,9 +113,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/table_border"
                 android:gravity="center_horizontal"
-                android:padding="3dp"
+                android:padding="6dp"
                 android:text="@string/studentno"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"
@@ -129,9 +124,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
-                android:background="@drawable/table_border"
                 android:gravity="center_horizontal"
-                android:padding="3dp"
+                android:padding="6dp"
                 android:text="@string/userstudentno"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"
@@ -143,9 +137,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/table_border"
                 android:gravity="center_horizontal"
-                android:padding="3dp"
+                android:padding="6dp"
                 android:text="@string/hobby"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"
@@ -155,9 +148,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="5"
-                android:background="@drawable/table_border"
                 android:gravity="center_horizontal"
-                android:padding="3dp"
+                android:padding="6dp"
                 android:text="@string/userhobby"
                 android:textColor="#FFFFFF"
                 android:textSize="17sp"

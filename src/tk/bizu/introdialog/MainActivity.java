@@ -42,14 +42,12 @@ public class MainActivity extends Activity {
 			myDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 			myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 			myDialog.setContentView(R.layout.custom);
-			//myDialog.setTitle("자기소개");
 			break;
 		}
 		Display display = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
 	    // Dialog 사이즈 조절 하기
 	    LayoutParams params = myDialog.getWindow().getAttributes();
 	    params.copyFrom(myDialog.getWindow().getAttributes());
-	    //params.width = (int) (display.getWidth() * 0.7); 
 	    params.width = LayoutParams.WRAP_CONTENT;
 	    params.height = LayoutParams.WRAP_CONTENT;
 	    myDialog.getWindow().setAttributes(params);
